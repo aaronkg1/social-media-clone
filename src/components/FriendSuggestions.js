@@ -38,7 +38,7 @@ export const FriendSuggestions = () => {
                   <img
                     src={userInfo.photoUrl}
                     alt={userInfo.firstName}
-                    className="friend-suggestion-picture"
+                    className="avatar"
                   />
                 </Link>
                 <Link to={`/users/${userInfo.id}`} className="profile-link">
