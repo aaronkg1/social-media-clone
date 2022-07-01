@@ -303,7 +303,7 @@ const UserProfile = (props) => {
           ) : null}
 
           {isFriend === true ? (
-            <div className="posts">
+            <div className="posts flex column align">
               {allPosts !== null
                 ? allPosts.map((post) => {
                     return <Post post={post} key={post.postID} />;
