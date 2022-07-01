@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { IoMdSend } from "react-icons/io";
 import { AiFillCamera, AiOutlineLoading3Quarters } from "react-icons/ai";
 import { TiDelete } from "react-icons/ti";
+import uniqid from "uniqid";
 import {
   firebaseStorage,
   auth,
@@ -43,7 +44,7 @@ export const CreatePost = (props) => {
       setUploadStatus("Uploading");
       const storageRef = ref(
         firebaseStorage,
-        `users/${auth.currentUser.uid}/posts`
+        `users/${auth.currentUser.uid}/posts/${uniqid()}`
       );
       const metadata = {
         contentType: "image/jpeg",
