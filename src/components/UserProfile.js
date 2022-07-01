@@ -276,8 +276,8 @@ const UserProfile = (props) => {
     if (currentUser !== null) {
       return (
         <div>
-          <div className="profile-info">
-            <div className="profile-info">
+          <div className="profile-info flex align center">
+            <div className="relative">
               <img
                 src={currentUser.userInfo.photoUrl}
                 alt={currentUser.userInfo.id}
