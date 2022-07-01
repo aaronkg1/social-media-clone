@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/aaronkg1/social-media-clone/static/css/main.c33922f7.css",
+    "main.js": "/aaronkg1/social-media-clone/static/js/main.4c9539e7.js",
+    "index.html": "/aaronkg1/social-media-clone/index.html",
+    "main.c33922f7.css.map": "/aaronkg1/social-media-clone/static/css/main.c33922f7.css.map",
+    "main.4c9539e7.js.map": "/aaronkg1/social-media-clone/static/js/main.4c9539e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c33922f7.css",
+    "static/js/main.4c9539e7.js"
+  ]
+}
