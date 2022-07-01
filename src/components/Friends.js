@@ -39,11 +39,7 @@ const Friends = () => {
               <li key={friend.id}>
                 <Link to={`/users/${friend.id}`} className="profile-link">
                   <h4>{friend.displayName}</h4>
-                  <img
-                    className="avatar small"
-                    src={friend.photoUrl}
-                    alt=""
-                  ></img>
+                  <img className="avatar" src={friend.photoUrl} alt=""></img>
                 </Link>
               </li>
             );
