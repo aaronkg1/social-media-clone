@@ -1,0 +1,173 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5vh;
+  background-color: white;
+  padding: 8px 15px 8px 15px;
+  -webkit-box-shadow: 0px 5px 3px -6px #000000;
+  box-shadow: 0px 5px 3px -6px #000000;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 2.5rem;
+  fill: #17abfe;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.current-user-card {
+  display: flex;
+  gap: 5px;
+  color: rgb(0, 110, 255);
+
+  align-items: center;
+  background-color: rgb(221, 242, 255);
+  border-radius: 50px;
+  width: fit-content;
+  padding: 5px 10px 5px 5px;
+}
+
+.nav-right {
+  gap: 20px;
+}
+
+.sign-out-nav,
+.friend-request-symbol,
+.notification-symbol,
+.account-settings-symbol,
+.messages-symbol {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgb(230, 230, 230);
+  color: black;
+}
+
+.profile-link {
+  text-decoration: none;
+}
+
+.friend-request-nav,
+.notifications-nav {
+  position: relative;
+}
+
+.sign-out-nav:hover,
+.friend-request-symbol:hover {
+  background-color: rgb(213, 213, 213);
+}
+
+.friend-request-indicator,
+.notifications-indicator {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  top: -10%;
+  left: 60%;
+  padding: 4px;
+  background-color: rgb(224, 0, 0);
+  color: white;
+  font-size: 0.7rem;
+}
+
+.notification-span {
+  z-index: 10;
+}
+.friend-request-dropdown,
+.notifications-dropdown {
+  position: absolute;
+  top: 100%;
+  background-color: #e4f5ff;
+  z-index: 10;
+  border-left: solid lightgray 1px;
+  border-bottom: solid lightgray 1px;
+  border-right: solid lightgray 1px;
+}
+
+.friend-request {
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notification {
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #e4f5ff;
+}
+
+.friend-request:hover,
+.notification:hover {
+  background-color: #bfe7ff;
+}
+
+.request-from {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.friend-request-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.friend-request-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notification-avatar {
+  height: 3vh;
+  width: 3vh;
+  float: left;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.notification,
+.friend-request {
+  cursor: pointer;
+}
+
+.read .link-to-post {
+  color: grey;
+}
+
+.read:hover {
+  background-color: lightgray;
+}
+
+.unread-notification-symbol {
+  fill: #17abfe;
+}
+
+.read-notification-symbol {
+  fill: #93bad1;
+}
+
+.link-to-post {
+  text-decoration: none;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,16 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-title {
+  text-align: center;
+  font-size: 3rem;
+}
+.welcome-message {
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
+}

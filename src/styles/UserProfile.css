@@ -1,0 +1,59 @@
+.posts {
+  gap: 10px;
+  padding: 20px;
+}
+
+.profile-photo {
+  height: 25vh;
+  width: 25vh;
+  min-height: 250px;
+  min-width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.change-picture {
+  padding: 7px;
+  border-radius: 50%;
+  background-color: rgb(230, 230, 230);
+  font-size: 1.5em;
+  position: relative;
+  left: -85px;
+}
+
+.profile-info {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.change-picture:hover {
+  background-color: rgb(206, 204, 204);
+  cursor: pointer;
+}
+
+.avatar {
+  height: 5vh;
+  width: 5vh;
+  float: left;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-display-name {
+  font-size: 3rem;
+  position: relative;
+}
+
+.loading {
+  display: inline-block;
+  font-size: 1.5rem;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

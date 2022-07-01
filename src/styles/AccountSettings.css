@@ -1,0 +1,11 @@
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.change-profile-pic {
+  display: flex;
+  flex-direction: column;
+}

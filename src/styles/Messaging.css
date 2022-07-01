@@ -1,0 +1,158 @@
+:root {
+  box-sizing: border-box;
+}
+
+.message-friend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 10px 15px 10px 15px;
+}
+
+.message-friend:hover {
+  background-color: rgba(101, 221, 101, 0.34);
+  cursor: pointer;
+}
+
+.message-friend:hover .avatar {
+  transform: scale(1.1);
+}
+.message-friend:hover > p {
+  transform: scale(1.1);
+}
+
+.active-friend {
+  background-color: lightblue;
+}
+
+.active-friend > .avatar {
+  transform: scale(1.1);
+}
+.active-friend > p {
+  transform: scale(1.1);
+}
+
+.new-message {
+  background-color: rgba(255, 0, 0, 0.419);
+}
+
+.messages {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  padding: 30px;
+}
+
+.message-friends-list {
+  width: 30%;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.messages-container {
+  min-height: 100%;
+  flex: 0 1 auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.send-message-box {
+  position: absolute;
+  bottom: 0;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(240, 239, 239);
+  border-radius: 50px;
+  padding: 0 20px 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.chat-input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.send-message-icon {
+  font-size: 2.5rem;
+}
+
+.messages-list {
+  max-height: 75vh;
+  width: 100%;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
+  gap: 5px;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.message-bubble {
+  padding: 10px 15px 10px 15px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.sent-message {
+  background-color: rgb(0, 102, 255);
+  color: white;
+  align-self: flex-end;
+  width: fit-content;
+}
+
+.received-message {
+  background-color: rgb(226, 226, 226);
+  color: black;
+  align-self: flex-start;
+  width: fit-content;
+}
+
+.list-container {
+  width: 100%;
+}
+
+.chat-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.link .avatar {
+  min-height: 6vh;
+  min-width: 6vh;
+  max-width: 6vh;
+  max-height: 6vh;
+}
+
+.unread-messages {
+  gap: 10px;
+  font-size: 0.7rem;
+  padding-left: 10px;
+  color: rgb(104, 104, 104);
+}
