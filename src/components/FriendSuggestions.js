@@ -25,7 +25,7 @@ export const FriendSuggestions = () => {
 
   useEffect(() => {}, [friendRequests]);
 
-  if (filteredUsers != null) {
+  if (filteredUsers != null && filteredUsers.length > 0) {
     return (
       <div>
         <h1>Friend Suggestions</h1>

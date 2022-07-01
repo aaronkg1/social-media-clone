@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  Navigate,
+  HashRouter,
+  BrowserRouter,
+} from "react-router-dom";
 import SignUp from "./SignUp";
 import SignIn from "./SignIn";
 import HomePage from "./HomePage";
@@ -39,6 +45,7 @@ const RouteSwitch = () => {
   }, [dispatch]);
 
   useEffect(() => {
+    // get 10 public profiles, necessary for initial friend suggestions
     if (authState) {
       const getPublicProfiles = async () => {
         try {

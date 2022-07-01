@@ -4,8 +4,8 @@ import { getStorage } from "firebase/storage";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCaBhtejfC8J1nJ7fqQXLcmbWSO6YbrwzA",
-  authDomain: "social-media-clone-e353c.firebaseapp.com",
+  apiKey: `${process.env.REACT_APP_API_KEY}`,
+  authDomain: `${process.env.REACT_APP_AUTH_DOMAIN}`,
   projectId: "social-media-clone-e353c",
   storageBucket: "social-media-clone-e353c.appspot.com",
   messagingSenderId: "806414854909",
