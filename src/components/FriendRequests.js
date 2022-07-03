@@ -148,7 +148,7 @@ const FriendRequests = (props) => {
                     <img
                       src={request.photoUrl}
                       alt={request.displayName}
-                      className="friend-suggestion-picture"
+                      className="avatar"
                     />
                     <p>{request.displayName}</p>
                   </div>

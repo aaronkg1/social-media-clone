@@ -72,7 +72,7 @@ export const Messaging = () => {
     if (oldMessages !== null && snapShot !== null) {
       if (oldMessages.length < snapShot.length) {
         const notificationSound = new Audio("/notification.mp3");
-        notificationSound.autoplay = true;
+        notificationSound.play();
       }
     }
   }, [snapShot, oldMessages]);

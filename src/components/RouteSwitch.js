@@ -102,8 +102,18 @@ const RouteSwitch = () => {
             authState ? <SinglePost /> : <Navigate to="/signin" replace />
           }
         />
-        <Route path="/messages" element={<Messaging />} />
-        <Route path="/accountsettings" element={<AccountSettings />} />
+        <Route
+          path="/messages"
+          element={
+            authState ? <Messaging /> : <Navigate to="/signin" replace />
+          }
+        />
+        <Route
+          path="/accountsettings"
+          element={
+            authState ? <AccountSettings /> : <Navigate to="/signin" replace />
+          }
+        />
         <Route path="" element={<HomePage />} />
       </Routes>
     </BrowserRouter>
