@@ -1,11 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  Routes,
-  Route,
-  Navigate,
-  HashRouter,
-  BrowserRouter,
-} from "react-router-dom";
+import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
 import SignUp from "./SignUp";
 import SignIn from "./SignIn";
 import HomePage from "./HomePage";
