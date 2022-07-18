@@ -79,7 +79,7 @@ export const CreatePost = (props) => {
         (postContent.body !== "" || postContent.photoUrl !== null)
       ) {
         try {
-          const postRef = await addDoc(collection(firestoreDatabase, "posts"), {
+          await addDoc(collection(firestoreDatabase, "posts"), {
             ...postContent,
             date: serverTimestamp(),
             authorID: auth.currentUser.uid,
