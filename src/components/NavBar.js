@@ -78,7 +78,6 @@ const Navbar = () => {
   }, [currentUser]);
 
   useEffect(() => {}, [user]);
-
   useEffect(() => {}, [dropdownHidden]);
   useEffect(() => {}, [userData]);
 

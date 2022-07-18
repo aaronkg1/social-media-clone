@@ -380,7 +380,11 @@ export const Messaging = () => {
             <input
               value={message}
               onChange={updateMessageField}
-              onKeyDown={handleKeyDown}
+              onKeyDown={(e) => {
+                if (message.length > 0) {
+                  handleKeyDown(e);
+                }
+              }}
               type="text"
               disabled={inputDisabled}
               className="chat-input"
@@ -388,8 +392,10 @@ export const Messaging = () => {
             />
             <IoMdSend
               onClick={() => {
-                sendMessage(selectedFriend);
-                selectFriend(selectedFriend.id);
+                if (message.length > 0) {
+                  sendMessage(selectedFriend);
+                  selectFriend(selectedFriend.id);
+                }
               }}
               disabled={inputDisabled}
               className="send-message-icon"
