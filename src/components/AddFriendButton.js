@@ -35,7 +35,7 @@ export const AddFriendButton = (props) => {
         setButtonClicked(true);
       } else setButtonClicked(false);
     });
-  }, []);
+  }, [userInfo.id]);
 
   const addFriend = async (userInfo) => {
     try {

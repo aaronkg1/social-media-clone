@@ -1,4 +1,3 @@
-import { set } from "date-fns";
 import {
   addDoc,
   collection,
@@ -168,8 +167,9 @@ export const Messaging = () => {
   }, [friends]);
 
   useEffect(() => {
+    // Hook to sort messages into date order
     if (sentMessages !== null && receivedMessages !== null) {
-      const friendsListCopy = JSON.parse(JSON.stringify(friends));
+      const friendsListCopy = JSON.parse(JSON.stringify(friends)); // Uses JSON to make a deep copy to avoid direct state assignment
       const sentMessagesCopy = sentMessages.sort((a, b) => {
         return [a] - [b];
       });
@@ -213,7 +213,7 @@ export const Messaging = () => {
             );
           } else friendInArray.lastMessageDate = 0;
         }
-      }
+      } // finally arrange friend list by date of the last message received so recent chats appear at the top
       setFriendsMessages(
         friendsListCopy.sort((a, b) => {
           return b.lastMessageDate - a.lastMessageDate;
@@ -244,6 +244,7 @@ export const Messaging = () => {
       });
       setMessage("");
       setTimeout(() => {
+        // Reduces ability of user to spam messages
         setInputDisabled(false);
       }, 200);
     } else return;
